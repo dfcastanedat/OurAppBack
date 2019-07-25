@@ -83,6 +83,8 @@ test:
 #
 production:
   <<: *default
+  port: 5432
+  database: d5kbckvtet3sej
   username: wzyfkntfshhxfg
   password: 2dae654176546373d2fb890162a83642180625a534ab45cb936924c0f29bcbd7
   url: postgres://wzyfkntfshhxfg:2dae654176546373d2fb890162a83642180625a534ab45cb936924c0f29bcbd7@ec2-54-227-251-33.compute-1.amazonaws.com:5432/d5kbckvtet3sej
