@@ -18,15 +18,21 @@ default: &default
   adapter: postgresql
   encoding: unicode
   port: 5432
-  username: postgres
-  password: combino2
+  database: d5kbckvtet3sej
+  username: wzyfkntfshhxfg
+  password: 2dae654176546373d2fb890162a83642180625a534ab45cb936924c0f29bcbd7
+  url: postgres://wzyfkntfshhxfg:2dae654176546373d2fb890162a83642180625a534ab45cb936924c0f29bcbd7@ec2-54-227-251-33.compute-1.amazonaws.com:5432/d5kbckvtet3sej
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: ourapp
+  port: 5432
+    database: d5kbckvtet3sej
+    username: wzyfkntfshhxfg
+    password: 2dae654176546373d2fb890162a83642180625a534ab45cb936924c0f29bcbd7
+    url: postgres://wzyfkntfshhxfg:2dae654176546373d2fb890162a83642180625a534ab45cb936924c0f29bcbd7@ec2-54-227-251-33.compute-1.amazonaws.com:5432/d5kbckvtet3sej
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
